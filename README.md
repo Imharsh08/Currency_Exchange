@@ -1,6 +1,43 @@
 # Currency_Exchange
 Electron.js Desktop Application
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="app-details">
+        <img src="icon" class="icon" />
+        <h1 class="app-title">Currency Exchange</h1>
+      </div>
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" value="100" />
+      <div class="dropdowns">
+        <select id="from-currency-select"></select>
+        <select id="to-currency-select"></select>
+      </div>
+      <button id="convert-button">Convert</button>
+      <div class="dropdowns">
+      <p id="resultFill"></p>
+      <p id="result"></p>
+    </div>
+    </div>
 
+    <!-- Scipt With Array Of Supported Country Codes -->
+    <script src="currency-codes.js"></script>
+    <!-- Script -->
+    <script src="renderer.js"></script>
+  </body>
+</html>
 This file contain html, java script and css codes used to create a desktop application using Electron.js 
 ## Features
 
